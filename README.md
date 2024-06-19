@@ -18,6 +18,10 @@ Currently only has one endpoint `localhost:8080/lldp` with is a **POST** request
 
 The `chassis` key contains the data of the machine and the `neighbor` key contains an array of the devices the machine is connected with.
 
+You can test the API after running the server with POSTMAN or Thunderclient or any API testing software of your choice. Add the follwing endpoint
+
+```http://localhost:8080/lldp``` as a **POST** request and copy the following JSON object into the BODY of the request.
+
 ```
 {
    "chassis":{
